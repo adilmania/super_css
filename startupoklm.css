@@ -30,6 +30,11 @@ h1, h2, h3,
 @-moz-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
 @-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
 
+/* Always show the page title */
+.notion-navbar a[href="/"] {
+    display: flex !important;
+}
+
 /* Navbar */
 .notion-navbar {
     background: #FFFFFF !important;
@@ -57,7 +62,7 @@ h1, h2, h3,
 }
 
     /* Hide certain elements */
-    #page-index .notion-header,
+    #page-index .header__content,
     a#block-test {
         display: none !important;
     }
