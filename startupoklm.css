@@ -1,8 +1,60 @@
+/*
+
+StartupOKLM Site CSS
+
+*/
 
     :root {
         --color-text-default: #000 !important;
         --transition: all .2s ease-in-out !important;
     }
+
+    /* Fade in animation */
+body {
+    -webkit-animation: fadeIn 1s !important;
+    -moz-animation: fadeIn 1s !important;
+    animation: fadeIn 1s !important;
+}
+h1, h2, h3,
+.notion-column-list,
+.notion-collection,
+.notion-divider {
+    -webkit-animation: fadeInUp 1s !important;
+    -moz-animation: fadeInUp 1s !important;
+    animation: fadeInUp 1s !important;
+}
+@keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-moz-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@-webkit-keyframes fadeIn { 0% {  opacity: 0; } 100% { opacity: 1; } }
+@keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+@-moz-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+@-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
+
+/* Navbar */
+.notion-navbar {
+    background: #FFFFFF !important;
+    height: var(--navbar-height) !important;
+    box-shadow: none !important;
+    position: fixed !important;
+}
+.notion-navbar>a { padding: 0 !important; }
+.notion-navbar>a:hover { background: none !important; }
+.notion-breadcrumb__divider { margin: -4px 4px 0 !important; }
+.notion-navbar__title { overflow: visible !important; }
+.notion-quote {
+    padding: 0 var(--padding-right) 0 0 !important;
+    height: var(--navbar-height) !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    position: fixed !important;
+    font-size: 22px !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    border: none !important;
+    margin: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+}
 
     /* Hide certain elements */
     #page-index .notion-header,
