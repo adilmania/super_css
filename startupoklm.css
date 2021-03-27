@@ -31,7 +31,7 @@ h1, h2, h3,
 @-webkit-keyframes fadeInUp { 0% { transform: translate3d(0,40px,0); } 100% { transform: translate3d(0,0,0); } }
 
     /* Hide certain elements */
-    #page-index .header,
+    #page-index .notion-header__content,
     a#block-test {
         display: none !important;
     }
