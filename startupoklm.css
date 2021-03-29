@@ -4,10 +4,15 @@ StartupOKLM Site CSS
 
 */
 
-    :root {
-        --color-text-default: #000 !important;
-        --transition: all .2s ease-in-out !important;
-    }
+/* Change default Notion variables */
+:root {
+    --color-bg-navbar: #000 !important;
+    --transition: all .2s ease-in-out !important;
+    --color-bg-default: #000 !important;
+    --color-text-gray: #757575 !important;
+    --color-text-default: #fff !important;
+    --color-bg-black: #191919 !important;
+}
 
     /* Fade in animation */
 body {
